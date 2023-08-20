@@ -1,8 +1,9 @@
 FROM ubuntu:latest
 
 RUN apt update 
-RUN apt install nodejs
-RUN apt install npm
+RUN apt install -y nodejs
+RUN apt install -y npm
+RUN apt-get install -y curl
 
 WORKDIR /usr/src/app
 
